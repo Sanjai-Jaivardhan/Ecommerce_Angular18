@@ -1,0 +1,17 @@
+
+<app-navbar></app-navbar>
+<app-search></app-search>
+<div class="outercontainer">
+    <div class="container" *ngFor="let item of details">
+      <div class="floating-card">
+        <h2>{{ item.title }}</h2>
+        <img [src]="item.image" alt="image" />
+        <p>{{ item.price | currency }}</p>
+        <div class="innerdiv">
+            <button (click)="buyProduct(item)">Buy</button>
+            <button (click)="addToCart(item)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

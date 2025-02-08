@@ -1,0 +1,12 @@
+<div *ngFor="let item of cartItems$ | async">
+  <div>
+    <h3>{{ item.title }}</h3>
+    <p>Price: {{ item.price }} x {{ item.quantity }} = {{ item.price * item.quantity }}</p>
+    <button (click)="removeItem(item)">Remove</button>
+  </div>
+</div>
+
+<div>
+  <h3>Total Price: {{ totalPrice$ | async }}</h3>
+  <button (click)="clearCart()">Clear Cart</button>
+</div>

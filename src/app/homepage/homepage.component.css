@@ -1,0 +1,89 @@
+.outercontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin-top: 50px;
+    padding: 0 20px;
+  }
+  
+  .container {
+    width: 29%; 
+    margin: 20px 0;
+  }
+  
+  .floating-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgb(207, 66, 207);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 350px; 
+    overflow: auto; 
+  }
+  
+  .floating-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .floating-card h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .floating-card p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .floating-card img {
+    max-width: 30%; 
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+  }
+  
+  .innerdiv {
+    display: flex;
+    justify-content: space-around; 
+    gap: 10px;
+    width: 100%;
+    margin-top: auto; 
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: purple; 
+    color: white;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 45%; 
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container {
+      width: 100%; 
+    }
+  
+    button {
+      font-size: 12px; 
+    }
+  }
+  
